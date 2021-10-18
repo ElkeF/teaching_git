@@ -1,0 +1,113 @@
+%\documentclass[dvips,red]{beamer}
+%\documentclass[red,xcolor=dvipsnames]{beamer}
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{etex}
+\usepackage[T1]{fontenc}
+\usepackage[english,german]{babel}
+\usepackage{amsmath,amsfonts,amssymb}
+%\usepackage{dsfont}
+%\usepackage{hyperref}
+%\usepackage{colortbl}
+%\usepackage{rotating}
+\usepackage{textcomp}
+\usepackage{amsbsy}
+\usepackage{marvosym} % Blitz
+\usepackage{multicol}
+\usepackage{helvet}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{braket}
+\usepackage{units}
+\usepackage{multirow}
+%\usepackage{overcite}
+%\usepackage{bibgerm}
+%\usepackage{inlinebib}
+%\usepackage[absolute,overlay]{textpos}
+\usepackage{booktabs}
+\usepackage{appendixnumberbeamer}
+\usepackage{animate}
+
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{positioning,fadings,patterns,decorations}
+
+   \tikzfading[name=fade inside,
+            inner color=transparent!90,
+            outer color=transparent!40]
+   \tikzfading[name=fade out,
+            inner color=transparent!0,
+            outer color=transparent!90]
+
+\pgfdeclaredecoration{stars}{initial}{\state{initial}[width=6pt,next state=star1]
+{}
+\state{star1}[width=4pt,next state=gap]{\pgfuseplotmark{star}}
+\state{gap}[width=4pt,next state=star1]{}
+\state{final}{\pgfpathmoveto{\pgfpointdecoratedpathlast}}
+}
+
+\pgfdeclaredecoration{starstars}{initial}{\state{initial}[width=6pt,next state=star1]
+{}
+\state{star1}[width=4pt,next state=star2]{\pgfuseplotmark{star}}
+\state{star2}[width=4pt,next state=gap]{\pgfuseplotmark{star}}
+\state{gap}[width=4pt,next state=star1]{}
+\state{final}{\pgfpathmoveto{\pgfpointdecoratedpathlast}}
+}
+\tikzset{
+dashStar/.style={dash pattern=on 4pt off 4pt,postaction={decorate,decoration=stars}},
+dashStarStar/.style={dash pattern=on 4pt off 8pt,postaction={decorate,decoration=starstars}},
+}
+
+\definecolor{diplom1}{rgb}{0.0 0.4 1.0}
+\definecolor{diplom2}{rgb}{0.0 0.0 0.6}
+\definecolor{diplom3}{RGB}{153,0,0} %unirot
+\definecolor{diplom4}{RGB}{232,215,23} 
+\definecolor{diplom5}{RGB}{51,37,60} 
+\definecolor{AUbluedark}{RGB}{0,37,70} 
+\definecolor{AUbluelight}{RGB}{0,61,115} 
+
+%\definecolor{diplom1}{rgb}{0,0.75,0.75}
+%\definecolor{diplom2}{RGB}{153,0,0}
+
+%\newrgbcolor{diplom1}{0.3 0.6 1.0}
+%\newrgbcolor{diplom2}{0.8 0.1 0.7}
+
+%\usetheme{CambridgeUS}
+\usetheme{Madrid}
+%\usecolortheme{mycrane}
+%\usecolortheme{orchid}
+\usecolortheme[named=AUbluelight]{structure}
+\setbeamercolor*{block body}{bg= white}
+\setbeamercovered{transparent}
+
+\beamertemplatenavigationsymbolsempty
+
+
+%Finde die Bilder
+\graphicspath{{../../bilder/}}
+
+\setcounter{tocdepth}{1}
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
+\DeclareMathOperator\erfc{erfc}
+
+\begin{document}
+ 
+
+\title[]
+{Collaborating using git}
+\subtitle{Git Basics}
+\author[E. Fasshauer]{Elke Fasshauer}
+\institute[]{University of Tübingen}
+\date[15.10.21]{15th October 2021}
+
+%\titlegraphic{\includegraphics[scale=0.15]{pumuckl_jonglage.pdf}}
+
+% Title page
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+
+
+\end{document}
