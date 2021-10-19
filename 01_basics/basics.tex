@@ -7,7 +7,7 @@
 \usepackage[english,german]{babel}
 \usepackage{amsmath,amsfonts,amssymb}
 %\usepackage{dsfont}
-%\usepackage{hyperref}
+\usepackage{hyperref}
 %\usepackage{colortbl}
 %\usepackage{rotating}
 \usepackage{textcomp}
@@ -72,18 +72,31 @@ dashStarStar/.style={dash pattern=on 4pt off 8pt,postaction={decorate,decoration
 %\newrgbcolor{diplom2}{0.8 0.1 0.7}
 
 %\usetheme{CambridgeUS}
-\usetheme{Madrid}
+%\usetheme{Madrid}
+\usetheme{Pittsburgh}
 %\usecolortheme{mycrane}
 %\usecolortheme{orchid}
+%\usecolortheme{dove}
+%\setbeamercolor{background canvas}{bg=black}
+%\setbeamercolor{normal text}{fg=white,bg=black}
+%\setbeamercolor{title}{fg=white,bg=black}
+%\setbeamercolor{frametitle}{fg=white,bg=black}
+%\usebeamercolor[fg]{normal text}
 \usecolortheme[named=AUbluelight]{structure}
-\setbeamercolor*{block body}{bg= white}
+%\setbeamercolor*{block body}{bg= white}
+%\setbeamercolor*{block title}{bg= diplom2}
+
+%\setbeamercolor{itemize item}{fg=white}
+%\setbeamercolor{itemize subitem}{fg=white}
+%\setbeamercolor{itemize subsubitem}{fg=white}
+
 \setbeamercovered{transparent}
 
 \beamertemplatenavigationsymbolsempty
 
 
 %Finde die Bilder
-\graphicspath{{../../bilder/}}
+\graphicspath{{bilder/}}
 
 \setcounter{tocdepth}{1}
 \newcommand{\nocontentsline}[3]{}
@@ -108,6 +121,10 @@ dashStarStar/.style={dash pattern=on 4pt off 8pt,postaction={decorate,decoration
 \end{frame}
 
 
+\input{slides/motivation_code}
+\input{slides/motivation_merge}
+
+\input{slides/workflow1}
 
 
 \end{document}
