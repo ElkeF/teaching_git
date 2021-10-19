@@ -1,13 +1,12 @@
-\begin{frame}{Workflow: Stagin area and commit}
+\begin{frame}{Workflow: History}
 \footnotesize
 
 \onslide<2->{
-\begin{block}{Adding files to staging area}
+\begin{block}{Inspect history}
 \begin{semiverbatim}
-\$ git add file.txt
+\$ git log
 
-
-
+\$ git log --oneline
 %\only<3->{
 %Noch keine Commits
 %
@@ -22,21 +21,10 @@
 \end{block}
 }
 
-\onslide<3->{
-\begin{block}{Commit}
-\begin{semiverbatim}
-
-\$ git commit
-
-
-
-\end{semiverbatim}
 \begin{center}
-\only<5>{
- \includegraphics[width=0.8\textwidth]{pics/commit.png}
+\only<3>{
+ \includegraphics[width=0.8\textwidth]{pics/git_log.png}
 }
 \end{center}
-\end{block}
-}
 
 \end{frame}
