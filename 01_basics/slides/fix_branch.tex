@@ -1,0 +1,46 @@
+\begin{frame}{Workflow: Working with multiple branches}
+\footnotesize
+
+\onslide<2->{
+\begin{block}{Correct typo}
+\begin{semiverbatim}
+\$ git checkout main
+
+\onslide<3->{
+\$ git branch typo main
+}
+
+\onslide<4->{
+\$ git checkout typo
+}
+
+\onslide<5->{
+\$ git branch
+}
+
+\only<6->{
+main
+
+new\_content
+
+* \textcolor{green}{typo}
+
+}
+\end{semiverbatim}
+\end{block}
+}
+
+\only<7->{
+\begin{block}{What our file looks like}
+\begin{semiverbatim}
+Test
+
+
+firrst line
+
+
+\end{semiverbatim}
+\end{block}
+}
+
+\end{frame}
