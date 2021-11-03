@@ -1,0 +1,40 @@
+\begin{frame}{Remote branches}
+\footnotesize
+
+\begin{itemize}
+ \item remote branches are not automatically transferred
+ \item need to create local branch that tracks remote branch
+\end{itemize}
+
+
+\begin{block}{}
+\begin{semiverbatim}
+
+\onslide<2->{
+\$ git branch -r
+}
+
+
+\onslide<3->{
+  origin/HEAD -> origin/main
+
+  origin/basics
+
+  origin/cluster
+
+  origin/main
+
+  origin/remotely
+
+  origin/vi\_masters
+}
+
+
+\onslide<4->{
+\$ git branch basics origin/basics
+}
+\end{semiverbatim}
+\end{block}
+
+
+\end{frame}

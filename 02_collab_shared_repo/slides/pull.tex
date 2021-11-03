@@ -1,0 +1,45 @@
+\begin{frame}{Interacting with remote branches: pull, push}
+\footnotesize
+
+\begin{block}{Branch off from remote tracking branch}
+\begin{semiverbatim}
+
+\onslide<2->{
+\$ git checkout basics
+
+\$ git branch feature basics
+
+\$ git checkout feature
+}
+\end{semiverbatim}
+\end{block}
+
+\onslide<3->{
+Work, work, work on feature branch
+}
+
+\onslide<4->{
+\begin{block}{Safely move your changes to collective remote branch}
+\begin{semiverbatim}
+
+\$ git checkout basics
+
+\$ git pull
+
+\$ git checkout feature
+
+\$ git merge basics
+
+\$ git checkout basics
+
+\$ git merge feature
+
+\$ git pull
+
+\$ git push
+\end{semiverbatim}
+\end{block}
+
+}
+
+\end{frame}
